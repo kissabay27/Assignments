@@ -9,3 +9,4 @@ def lcs(X, Y, m, n):
 X = "ACTGCA"
 Y = "CATCGC"
 print ("Length of LCS is ", lcs(X , Y, len(X), len(Y)))
+
