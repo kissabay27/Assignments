@@ -1,0 +1,28 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import linear_model
+df=pd.read_excel("price.xlsx")
+df
+%matplotlib inline
+plt.scatter(df.area,df.price, color= "green") 
+plt.xlabel("area (m2)")
+plt.ylabel("price(mln)")
+plt.scatter(df.area,df.price, color= "red") 
+plt.xlabel("area (m2)")
+plt.ylabel("price(mln)")
+plt.scatter(df.area,df.price, color = "purple") 
+plt.xlabel("area (m2)")
+plt.ylabel("price(mln)")
+reg = linear_model.LinearRegression()
+reg.fit(df [["area"]], df.price)
+reg.predict( [[38]])
+reg.predict( [[120]])
+reg.coef_
+plt.scatter(df.area,df.price, color = "purple") 
+plt.xlabel("area (m2)")
+plt.ylabel("price(mln)")
+plt.plot(df.area,reg.predict(df[["area"]]))
+pred= pd.read_excel("prediction_price.xlsx")
+pred
+reg.predict()
