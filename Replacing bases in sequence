@@ -1,0 +1,6 @@
+mainstr = "GGCCATAGGAGAAGGTGTCACACTCGATAGGTGGTCCAATGGTTATCTATGGATCCATGAATCTTAGGGACCGACCCGACTGTGTGGGGCACGGCATTTTGCTAGCACCTATAGATACG"
+otherstr = mainstr.replace("A", "T")
+otherstr = mainstr.replace("G", "C")
+otherstr = mainstr.replace("T", "A")
+otherstr = mainstr.replace("C", "G")
+print (otherstr) 
